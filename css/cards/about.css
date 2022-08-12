@@ -1,0 +1,129 @@
+.card{
+    font-family: 'Commissioner', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #FFFFFF;
+    margin: 0 1.56rem;
+    border-radius: 0.625rem;
+    border: #f4f4f4 solid 1px;
+}
+
+.price__card{
+    margin: 1.56rem 0 0 0;
+    width: calc(100% - 2rem);
+    align-items: flex-start;
+    text-align: left;
+    padding: 2rem 1rem;
+    border-color: #d9d9d9;
+}
+
+.card-content{
+    margin-bottom: 25px;
+}
+
+.about .price__card p{
+    margin-top: 0.6rem;
+    width: 14.4rem;
+}
+
+.price__card span{
+    font-size: 0.88rem;
+    line-height: 1.4rem;
+    font-weight: 400;
+    color: #7a7a7a;
+}
+
+.price__card button{
+    margin-top: 2rem;
+}
+
+.card__out{
+    margin: 1.56rem 0 0 0;
+    width: calc(100% - 2rem);
+    align-items: flex-start;
+    text-align: left;
+    padding: 2rem 1rem;
+}
+
+.title__out{
+    font-weight: 700;
+    color: #808080;
+}
+
+.text__out{
+    margin-top: 0.6rem;
+    width: 14.4rem;
+    color: #cdcdcd;
+    font-size: 0.88rem;
+    line-height: 1.4rem;
+    font-weight: 400;
+}
+
+.card__out button{
+    margin-top: 2rem;
+    background-color: #cbcbcb;
+}
+
+.card__out span{
+    font-size: 0.88rem;
+    line-height: 1.4rem;
+    font-weight: 400;
+    color: #cdcdcd;
+}
+
+.pledge--out{
+    margin-top: 0.6rem;
+    font-size: 0.88rem;
+    font-weight: 400;
+    color: #bedfdd;
+}
+
+.modal{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    background-color: #FFFFFF;
+    margin: 0 1.56rem;
+    border-radius: 0.625rem;
+    border: #f4f4f4 solid 1px;
+    padding: 3rem 2.1rem;
+}
+
+.pledge-content{
+    margin-left: -1rem;
+    width: calc(100% + 1rem);
+    padding-left: 1rem;
+    padding-top: 1rem;
+    border-top: #cdcdcd solid 1px;
+}
+.pledge-content{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 15px;
+}
+
+.pledge-content p{
+    margin: 0;
+}
+
+.pledge-button-value{
+    background-color: #FFFFFF;
+    border: #c0c0c0 solid 1px;
+    margin: 0;
+    padding: 15px 35px;
+    border-radius: 25px;
+    font-weight: 500;
+}
+.pledge-button{
+    background-color: hsl(176, 50%, 47%);
+    border: none;
+    margin: 0;
+    color: #FFFFFF;
+    padding: 15px 25px;
+    border-radius: 25px;
+    font-weight: 500;
+}

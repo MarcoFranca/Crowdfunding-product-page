@@ -1,5 +1,5 @@
 .header{
-    background-image: url("../images/image-hero-mobile.jpg");
+    background-image: url("../../images/image-hero-mobile.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -11,7 +11,7 @@
 }
 
 .menu__mobile{
-    background-image: url("../images/icon-hamburger.svg");
+    background-image: url("../../images/icon-hamburger.svg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 1rem;
