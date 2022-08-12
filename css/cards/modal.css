@@ -1,0 +1,20 @@
+.modal{
+    position: absolute;
+    top: 150px;
+    margin: 1.6rem 1.56rem;
+    justify-content: center;
+    background-color: #FFFFFF;
+    border-radius: 0.625rem;
+    border: #f4f4f4 solid 1px;
+    padding: 3rem 2.1rem;
+}
+
+.modal__title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.modal__title img{
+    width: 15px;
+}
