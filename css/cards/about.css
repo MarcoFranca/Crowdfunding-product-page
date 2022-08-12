@@ -2,82 +2,89 @@
     font-family: 'Commissioner', sans-serif;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
     background-color: #FFFFFF;
     margin: 0 1.56rem;
     border-radius: 0.625rem;
-    border: #f4f4f4 solid 1px;
+    border: #f4f4f4 solid 0.0625rem;
 }
 
-.price__card{
+/*****part of selection rewards cards*****/
+
+.select__card{
     margin: 1.56rem 0 0 0;
-    width: calc(100% - 2rem);
+    max-width: 14.4rem;
     align-items: flex-start;
     text-align: left;
-    padding: 2rem 1rem;
+    padding: 2rem 1.5rem;
     border-color: #d9d9d9;
 }
 
-.card-content{
-    margin-bottom: 25px;
+.select__card__pledge{
+    margin: 0.4rem 0;
 }
 
-.about .price__card p{
+.select__card__text{
     margin-top: 0.6rem;
     width: 14.4rem;
 }
 
-.price__card span{
+.select__card__stock{
+    display: flex;
+    margin: 1.5rem 0;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.select__card__stock span{
     font-size: 0.88rem;
-    line-height: 1.4rem;
     font-weight: 400;
     color: #7a7a7a;
 }
 
-.price__card button{
-    margin-top: 2rem;
+.price__card__button{
+    margin: 0.2rem 0;
+    font-size: 0.9rem;
 }
 
-.card__out{
+/********out of stock*******/
+
+.card__stockout{
     margin: 1.56rem 0 0 0;
-    width: calc(100% - 2rem);
+    max-width: 14.4rem;
     align-items: flex-start;
     text-align: left;
-    padding: 2rem 1rem;
+    padding: 2rem 1.5rem;
 }
 
-.title__out{
-    font-weight: 700;
+.title__stockout{
     color: #808080;
 }
 
-.text__out{
-    margin-top: 0.6rem;
-    width: 14.4rem;
-    color: #cdcdcd;
-    font-size: 0.88rem;
-    line-height: 1.4rem;
-    font-weight: 400;
-}
-
-.card__out button{
-    margin-top: 2rem;
-    background-color: #cbcbcb;
-}
-
-.card__out span{
-    font-size: 0.88rem;
-    line-height: 1.4rem;
-    font-weight: 400;
-    color: #cdcdcd;
-}
-
-.pledge--out{
+.pledge__stockout{
     margin-top: 0.6rem;
     font-size: 0.88rem;
     font-weight: 400;
     color: #bedfdd;
+}
+
+.out__stock{
+    display: flex;
+    margin: 1.5rem 0;
+    gap: 0.5rem;
+    align-items: center;
+    color: rgb(128, 128, 128);
+}
+
+.out__stock span{
+    font-size: 0.88rem;
+    font-weight: 400;
+    color: #cdcdcd;
+}
+
+.stockout__button{
+    margin: 0.2rem 0;
+    font-size: 0.9rem;
+    background-color: #cbcbcb;
 }
 
 .modal{
