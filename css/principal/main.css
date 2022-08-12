@@ -5,14 +5,15 @@ main{
 .cards{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
-.card-first{
+/******first card******/
+
+.first__card{
     position: relative;
     top: -3.125rem;
-    height: 15.625rem;
-    padding-bottom: 0.937rem;
+    padding-bottom: 1.5rem;
 }
 
 .card__logo{
@@ -24,31 +25,36 @@ main{
     width: 100%;
 }
 
-.card-first h1{
+.first__card__title{
     width: 12.5rem;
 }
 
-.card-first p{
+.first__card__text{
     margin: 1.25rem 0;
     width: 18.875rem;
 }
 
-.card__button {
+.first__card__button {
     display: flex;
     gap: 0.625rem;
     align-items: center;
 }
+
+/*******second card*******/
 
 .custs{
     padding: 1.5rem;
     margin-top: calc(1.56rem - 3.125rem);
 }
 
-.custs p{
+.custs__text{
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
-.custs progress {
+
+/*****progressive bar****/
+
+.custs progress{
     border-radius: 0.5rem;
     height: 10px;
     width: 100%;
@@ -64,18 +70,23 @@ progress::-webkit-progress-value {
     border-radius: 7px;
 }
 
+/*****section about******/
+
 .about{
-    margin-top: 1.56rem;
-    align-items: flex-start;
-    text-align: left;
+    margin: 1.56rem 1.56rem;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    border-radius: 0.625rem;
+    border: #f4f4f4 solid 1px;
     padding: 3rem 2.1rem;
 }
 
-.about h2{
+.about__title{
     margin-bottom: 1rem;
 }
 
-.about p{
+.about__text{
     margin-bottom: 1rem;
     width: 17.5rem;
 }
