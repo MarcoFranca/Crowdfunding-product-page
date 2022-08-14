@@ -1,4 +1,5 @@
 .modal{
+    /*display: none;*/
     position: absolute;
     top: 150px;
     margin: 1.6rem 1.56rem;
@@ -6,15 +7,57 @@
     background-color: #FFFFFF;
     border-radius: 0.625rem;
     border: #f4f4f4 solid 1px;
-    padding: 3rem 2.1rem;
+    padding: 2rem 2rem;
+    z-index: 1;
+}
+
+.modal__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.3rem;
+}
+.modal__content img{
+    width: 15px;
+}
+
+.modal__text{
+    margin-bottom: 1.3rem;
+}
+
+.modal__card{
+    margin: 1.56rem 0 0 0;
+    max-width: 14.4rem;
+    align-items: flex-start;
+    text-align: left;
+    padding: 2rem 1.5rem;
+    border-color: #d9d9d9;
 }
 
 .modal__title{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-
+    gap: 15px;
+    margin-bottom: 1.5rem;
 }
-.modal__title img{
-    width: 15px;
+
+.modal__pledge__content{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.modal__text{
+    width: 14.6rem;
+}
+
+.pledge-content{
+    text-align: center;
+    margin-left: -1.5rem;
+    width: calc(100% + 3rem);
+    padding-top: 1rem;
+    border-top: #cdcdcd solid 1px;
+}
+
+.pledge-text{
+    margin: 1rem 0;
 }
