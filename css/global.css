@@ -107,6 +107,7 @@ color: #bfbfbf;
 .pledge{
     font-size: 0.88rem;
     line-height: 1.4rem;
+    margin-top: .4rem;
     font-weight: 500;
     color: hsl(176, 56%, 47%);
 }

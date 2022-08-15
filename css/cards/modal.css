@@ -34,10 +34,53 @@
     border-color: #d9d9d9;
 }
 
+.madal__card__green{
+    border: #3cb4ab solid 2px;
+}
+
 .modal__title{
     display: flex;
-    gap: 15px;
+    flex-direction: column;
+    justify-content: center;
+    height: 25px;
+    position: relative;
+    padding-left: 2.2rem;
     margin-bottom: 1.5rem;
+}
+
+.modal__title input{
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border: #d9d9d9 solid .1rem;
+    border-radius: 50%;
+}
+
+.modal__title:hover input~ .checkmark{
+    background-color: #cbcbcb;
+}
+
+.modal__title input:checked~ .checkmark{
+    background: radial-gradient(circle, rgb(60, 180, 171) 0, rgb(60, 180, 171) 40%, #FFFFFF 45%);
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.modal__title input:checked ~ .checkmark:after {
+    display: block;
 }
 
 .modal__pledge__content{
