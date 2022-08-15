@@ -40,6 +40,22 @@ a:visited{
     padding: 15px 25px;
     border-radius: 25px;
     font-weight: 500;
+    cursor: pointer;
+}
+
+
+.navigation-button{
+    background-image: url("../images/icon-hamburger.svg");
+    background-color: transparent;
+    border: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1rem;
+    width: 1rem;
+}
+
+.button:hover{
+    background-color: rgb(21, 122, 116);
 }
 
 .button__mark{
