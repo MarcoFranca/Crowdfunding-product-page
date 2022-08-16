@@ -19,16 +19,19 @@
   <title>Crowdfunding product page</title>
 
 </head>
-<body class="">
+<body>
 <header class="header">
-  <nav>
-    <img src="./images/logo.svg" alt="">
-    <button class="navigation-button menu__list">
-    </button>
-    <ul class="menu__mobile">
-      <li><a href="#">About</a></li>
-      <li><a href="#">Discover</a></li>
-      <li><a href="#">Get Started</a></li>
+  <nav class="navigation">
+    <div class="navigation__menu">
+      <img src="./images/logo.svg" alt="">
+      <button id="menu-button" class="navigation-button menu__list">
+        <img id="menu-img" src="./images/icon-hamburger.svg" alt="hamburger icon">
+      </button>
+    </div>
+    <ul id="menu" class="menu__mobile card title-s">
+      <li><a id="about-li" href="#about">About</a></li>
+      <li><a id="discover-li" href="#cards">Discover</a></li>
+      <li><a id="Started-li" href="#">Get Started</a></li>
     </ul>
   </nav>
 </header>
@@ -68,14 +71,14 @@
 
       <p class="about__text text">Featuring artisan craftsmanship, the simplicity of design creates extra desk space below your computer to allow
         notepads, pens, and USB sticks to be stored under the stand.</p>
-      <div class="container__card">
+      <div id="cards" class="container__card">
         <div class="select__card card">
           <h3 class="title-s">Bamboo Stand</h3>
           <p class="select__card__pledge pledge">Pledge $25 or more</p>
           <p class="select__card__text text">You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and you’ll be
             added to a special Backer member list.</p>
           <h3 class="select__card__stock title-l">101 <span>left</span></h3>
-          <button class="price__card__button button">Select Reward</button>
+          <button id="bambo-btn" class="price__card__button button">Select Reward</button>
         </div>
         <div class="select__card card">
           <h3 class="title-s">Black Edition Stand</h3>
@@ -83,7 +86,7 @@
           <p class="select__card__text text">You get a Black Special Edition computer stand and a personal thank-you. You’ll be added to our Backer member list.
             Shipping is included.</p>
           <h3 class="select__card__stock title-l">64 <span>left</span></h3>
-          <button class="price__card__button button">Select Reward</button>
+          <button id="black-btn" class="price__card__button button">Select Reward</button>
         </div>
 
         <div class="card__stockout card">
@@ -91,8 +94,8 @@
           <p class="pledge__stockout">Pledge $200 or more</p>
           <p class="text__stockout text">You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank-you. You’ll be added to our
             Backer member list. Shipping is included.</p>
-          <h3 class="out__stock title-l">0 <span>left</span></h3>
-          <button class="stockout__button button">Out of Stock</button>
+          <h3 id="black-stq" class="out__stock title-l">0 <span>left</span></h3>
+          <button id="mahogany-btn" class="stockout__button button">Out of Stock</button>
         </div>
       </div>
     </section>
@@ -100,33 +103,34 @@
 </main>
 <!-- Selection modal start -->
 
-<div class="modal card">
+<div id="modal" class="modal card">
   <div class="modal__content">
     <h2 class=" title-m">Back this project</h2>
-    <button class="modal__button" type="button">
-      <img src="./images/icon-close-modal.svg" alt="image of an x representing the closing of the card">
+    <button id="modal-button" class="modal__button" type="button">
+      <img id="modalx" src="./images/icon-close-modal.svg" alt="image of an x representing the closing of the card">
     </button>
   </div>
   <p class="modal__text text">Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
 
   <!--  First pledge card-->
 
-  <div class="madal__card__green modal__card card">
+  <div id="pledge-id" class=" modal__card card">
     <label class="modal__title title-s">Pledge with no reward
-      <input type="radio" name="radio">
+      <input id="pledge" type="radio" name="radio" checked="checked">
       <span class="checkmark"></span>
     </label>
 
     <p class="modal__text text">Choose to support us without a reward if you simply believe in our project. As a backer, you will be signed up to
       receive product updates via email.</p>
+    <span id="pledge-button"></span>
   </div>
 
   <!--  Second pledge card-->
 
-  <div class="modal__card card">
+  <div id="bambo-id" class="modal__card card">
     <div class="card-content">
       <label class="modal__title title-s">Bamboo Stand
-        <input type="radio" name="radio">
+        <input id="bambo" type="radio" name="radio">
         <span class="checkmark"></span>
         <p class="pledge">Pledge $25 or more</p>
       </label>
@@ -135,9 +139,8 @@
       added to a special Backer member list.</p>
     <h3 class="select__card__stock title-m">101 <span class="">left</span></h3>
 
-
     <!-- Selected pledge start -->
-    <div class="pledge-content">
+    <div id="bambo-button" class="pledge-content">
       <p class="pledge-text">Enter your pledge</p>
       <button class="pledge-button-value"><span>$ </span> 25</button>
       <button class="pledge-button">Continue</button>
@@ -146,10 +149,10 @@
 
   <!-- Selected pledge end -->
 
-  <div class="modal__card card">
+  <div id="black-id" class="modal__card card">
     <div class="modal__content">
       <label class="modal__title title-s">Black Edition Stand
-        <input type="radio" name="radio">
+        <input id="black" type="radio" name="radio" checked ="">
         <span class="checkmark"></span>
         <p class="pledge">Pledge $75 or more</p>
       </label>
@@ -161,7 +164,7 @@
 
     <!-- Selected pledge start -->
 
-    <div class="pledge-content">
+    <div id="black-button" class="pledge-content">
       <p class="pledge-text">Enter your pledge</p>
       <button class="pledge-button-value"><span>$ </span>75</button>
       <button class="pledge-button">Continue</button>
@@ -170,10 +173,10 @@
 
   <!-- Selected pledge end -->
 
-  <div class="modal__card card">
+  <div id="mahogany-id" class="modal__card card">
     <div class="modal__content">
       <label class="modal__title title-s">Mahogany Special Edition
-        <input type="radio" name="radio">
+        <input id="mahogany" type="radio" name="radio">
         <span class="checkmark"></span>
         <p class="pledge">Pledge $200 or more</p>
       </label>
@@ -182,7 +185,7 @@
       Backer member list. Shipping is included.</p>
     <h3 class="select__card__stock title-m">0 <span>left</span></h3>
     <!-- Selected pledge  start -->
-    <div class="pledge-content">
+    <div id="mahogany-button" class="pledge-content">
       <p class="pledge-text">Enter your pledge</p>
       <button class="pledge-button-value"><span>$ </span>200</button>
       <button class="pledge-button">Continue</button>
