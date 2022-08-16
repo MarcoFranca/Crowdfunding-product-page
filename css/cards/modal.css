@@ -1,5 +1,5 @@
 .modal{
-    /*display: none;*/
+    display: none;
     position: absolute;
     top: 150px;
     margin: 1.6rem 1.56rem;
@@ -94,6 +94,7 @@
 }
 
 .pledge-content{
+    display: none;
     text-align: center;
     margin-left: -1.5rem;
     width: calc(100% + 3rem);
