@@ -45,13 +45,8 @@ a:visited{
 
 
 .navigation-button{
-    background-image: url("../images/icon-hamburger.svg");
     background-color: transparent;
     border: none;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 1rem;
-    width: 1rem;
 }
 
 .button:hover{
