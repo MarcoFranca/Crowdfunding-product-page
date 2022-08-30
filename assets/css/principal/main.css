@@ -7,6 +7,8 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
 }
 
 /******first card******/
@@ -17,6 +19,8 @@ main{
     text-align: center;
     top: -3.125rem;
     padding-bottom: 1.5rem;
+    width: 100%;
+    margin-bottom: -3.125rem;
 }
 
 .cards__first-card__logo{
@@ -49,7 +53,8 @@ main{
     align-items: center;
     text-align: center;
     padding: 1.5rem;
-    margin-top: calc(1.56rem - 3.125rem);
+    margin-top: 1.56rem;
+    width: calc(100% - 3rem);
 }
 
 .custs-text{
@@ -73,4 +78,19 @@ progress::-webkit-progress-bar {
 progress::-webkit-progress-value {
     background-color: #3cb4ab;
     border-radius: 7px;
+}
+
+@media screen and (min-width: 768px) {
+    .card{
+        font-family: 'Commissioner', sans-serif;
+        margin: 0 1.56rem;
+    }
+
+    .cards__first-card{
+        max-width: 40rem;
+    }
+
+    .cards__second-card{
+        max-width: 37rem;
+    }
 }
