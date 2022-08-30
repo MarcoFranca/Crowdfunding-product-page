@@ -8,6 +8,7 @@
     border-radius: 0.625rem;
     border: #f4f4f4 solid 1px;
     padding: 3rem 2.1rem;
+    width: calc(100% - 4.2rem);
 }
 
 .about__title{
@@ -102,6 +103,12 @@
     margin: 0.2rem 0;
     font-size: 0.9rem;
     background-color: #cbcbcb;
+}
+
+@media screen and (min-width: 768px) {
+    .about{
+       max-width: 36rem;
+    }
 }
 
 
