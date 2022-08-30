@@ -3,32 +3,41 @@
 <head class="main">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--  ***********************  FONTS  *********************-->
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/global.css">
-  <link rel="stylesheet" href="css/principal/header.css">
-  <link rel="stylesheet" href="css/principal/main.css">
-  <link rel="stylesheet" href="css/cards/about.css">
-  <link rel="stylesheet" href="css/cards/modal.css">
-  <link rel="stylesheet" href="css/cards/success.css">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!--  ***********************  CSS  *********************-->
 
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/global.css">
+  <link rel="stylesheet" href="assets/css/principal/header.css">
+  <link rel="stylesheet" href="assets/css/principal/main.css">
+  <link rel="stylesheet" href="assets/css/cards/about.css">
+  <link rel="stylesheet" href="assets/css/cards/modal.css">
+  <link rel="stylesheet" href="assets/css/cards/success.css">
+
+  <!--  ***********************  SCRIPT  *********************-->
+
+  <script src="assets/js/script.js" defer></script>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
   <title>Crowdfunding product page</title>
 
 </head>
 <body>
 <header class="header">
-  <nav class="navigation">
-    <div class="navigation__menu">
-      <img src="./images/logo.svg" alt="">
-      <button id="menu-button" class="navigation-button menu__list">
-        <img id="menu-img" src="./images/icon-hamburger.svg" alt="hamburger icon">
+  <nav class="header__navigation">
+    <div class="header__navigation__menu">
+      <img src="./assets/images/logo.svg" alt="crowndfoud logo">
+      <button id="menu-button" class="header__navigatino__menu__icon navigation-button">
+        <img id="menu-img" src="./assets/images/icon-hamburger.svg" alt="hamburger icon">
       </button>
     </div>
-    <ul id="menu" class="menu__mobile card title-s">
+    <ul id="menu" class="header__navigation__menu__ul card title-s">
       <li><a id="about-li" href="#about">About</a></li>
       <li><a id="discover-li" href="#cards">Discover</a></li>
       <li><a id="Started-li" href="#">Get Started</a></li>
@@ -37,27 +46,27 @@
 </header>
 <main>
   <div class="cards">
-    <div class="first__card card">
-      <div class="card__logo">
-        <img src="./images/logo-mastercraft.svg" alt="">
+    <div class="cards__first-card card">
+      <div class="cards__first-card__logo">
+        <img src="./assets/images/logo-mastercraft.svg" alt="mastercraft logo">
       </div>
 
-      <h1 class="first__card__title title-m">Mastercraft Bamboo Monitor Riser</h1>
-      <p class="first__card__text text">A beautiful & handcrafted monitor stand to reduce neck and eye strain.</p>
+      <h1 class="cards__first-card__title title-m">Mastercraft Bamboo Monitor Riser</h1>
+      <p class="cards__first-card__text text">A beautiful & handcrafted monitor stand to reduce neck and eye strain.</p>
 
-      <div class="first__card__button">
+      <div class="cards__first-card__button">
         <a href="#about" class="button">Back this project</a>
-        <button class="button__mark" role="button" aria-label="Bookmark"></button>
+        <button class="button__mark" role="button"><img src="./assets/images/icon-bookmark.svg" alt="Bookmark icon"><span id="bookmark">Bookmark</span></button>
       </div>
     </div>
 
-    <div class="funds card">
+    <div class="cards__second-card card">
       <h2 class="title-l">$89,914</h2>
-      <p class="custs__text text text-bar ">of $100,000 backed</p>
+      <p class="custs-text text text-bar ">of $100,000 backed</p>
       <h2 class="title-l">5,007</h2>
-      <p class="custs__text text text-bar">total backers</p>
+      <p class="custs-text text text-bar">total backers</p>
       <h2 class="title-l">56 </h2>
-      <p class="custs__text text">days left</p>
+      <p class="custs-text text">days left</p>
       <progress value="75" max="100"></progress>
     </div>
 
@@ -105,9 +114,9 @@
 
 <div id="modal" class="modal card">
   <div class="modal__content">
-    <h2 class=" title-m">Back this project</h2>
-    <button id="modal-button" class="modal__button" type="button">
-      <img id="modalx" src="./images/icon-close-modal.svg" alt="image of an x representing the closing of the card">
+    <h2 class="title-m">Back this project</h2>
+    <button id="modal-button" class="modal__content__button" type="button">
+      <img id="modalx" src="assets/images/icon-close-modal.svg" alt="image of an x representing the closing of the card">
     </button>
   </div>
   <p class="modal__text text">Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
@@ -120,8 +129,8 @@
       <span class="checkmark"></span>
     </label>
 
-    <p class="modal__text text">Choose to support us without a reward if you simply believe in our project. As a backer, you will be signed up to
-      receive product updates via email.</p>
+    <p class="modal__text text">Choose to support us without a reward if you simply believe in our project. As a backer,
+      you will be signed up to receive product updates via email.</p>
     <span id="pledge-button"></span>
   </div>
 
@@ -141,6 +150,7 @@
     <h3 class="select__card__stock title-m">101 <span class="">left</span></h3>
 
     <!-- Selected pledge start -->
+
     <div id="bambo-button" class="pledge-content">
       <p class="pledge-text">Enter your pledge</p>
       <button class="pledge-button-value"><span>$ </span> 25</button>
@@ -201,7 +211,7 @@
 <!-- Success modal start -->
 <div class="success card">
 
-  <img src="./images/icon-check.svg" alt="check icon">
+  <img src="assets/images/icon-check.svg" alt="check icon">
   <h2 class="success__title title-m">Thanks for your support!</h2>
   <p class="success__text text">Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get an email
     once our campaign is completed.</p>
@@ -209,5 +219,4 @@
 </div>
 <!-- Success modal end -->
 </body>
-<script src="./js/script.js"></script>
 </html>
