@@ -11,7 +11,7 @@ main{
 
 /******first card******/
 
-.first__card{
+.cards__first-card{
     position: relative;
     align-items: center;
     text-align: center;
@@ -19,7 +19,7 @@ main{
     padding-bottom: 1.5rem;
 }
 
-.card__logo{
+.cards__first-card__logo{
     position: relative;
     top: -1.562rem;
 }
@@ -28,16 +28,16 @@ main{
     width: 100%;
 }
 
-.first__card__title{
+.cards__first-card__title{
     width: 12.5rem;
 }
 
-.first__card__text{
+.cards__first-card__text{
     margin: 1.25rem 0;
     width: 18.875rem;
 }
 
-.first__card__button {
+.cards__first-card__button {
     display: flex;
     gap: 0.625rem;
     align-items: center;
@@ -45,21 +45,21 @@ main{
 
 /*******second card*******/
 
-.funds{
+.cards__second-card{
     align-items: center;
     text-align: center;
     padding: 1.5rem;
     margin-top: calc(1.56rem - 3.125rem);
 }
 
-.custs__text{
+.custs-text{
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
 /*****progressive bar****/
 
-.funds progress{
+.cards__second-card progress{
     border-radius: 0.5rem;
     height: 10px;
     width: 100%;

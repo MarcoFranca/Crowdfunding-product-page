@@ -4,7 +4,7 @@ const selectBambo = document.querySelector("#bambo-btn");
 const selectBlack = document.querySelector("#black-btn");
 const selectMahogany = document.querySelector("#mahogany-btn");
 const closeModal = document.querySelector('#modal-button');
-let modal = document.querySelector('#modal')
+const modal = document.querySelector('#modal')
 
 // ***** menu bar ****
 navButton.addEventListener('click',()=>{
@@ -12,8 +12,8 @@ navButton.addEventListener('click',()=>{
         "#menu",
         "flex",
         '#menu-img',
-        './images/icon-hamburger.svg',
-        './images/icon-close-menu.svg',
+        './assets/images/icon-hamburger.svg',
+        './assets/images/icon-close-menu.svg',
         'color');
 });
 
@@ -22,8 +22,8 @@ navigationUl.addEventListener('click', ()=>{
     changeMenu("#menu",
         "flex",
         '#menu-img',
-        './images/icon-hamburger.svg',
-        './images/icon-close-menu.svg',
+        './assets/images/icon-hamburger.svg',
+        './assets/images/icon-close-menu.svg',
         'color');
 });
 
